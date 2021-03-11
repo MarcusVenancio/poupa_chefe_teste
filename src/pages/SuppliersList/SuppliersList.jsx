@@ -22,6 +22,7 @@ export const SuppliersList = () => {
         <div className="suppliers-list__wrapper-table">
           <TableSuppliers data={suppliersList} />
         </div>
+        <p className="suppliers-list__instruction">Deslize para ver a tabela completa</p>
       </div>
     </div>
   );
