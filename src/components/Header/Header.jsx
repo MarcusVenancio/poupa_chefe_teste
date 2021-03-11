@@ -35,13 +35,13 @@ export const Header = ({ setAuth }) => {
             checked={theme !== ""}
             onChange={(e) => handleSetTheme(e)}
             />
-            <span>Switch theme</span>
+            <span>Trocar tema</span>
         </div>
         <div className="header__logout">
           <IconButton onClick={() => handleLogOut()}>
             <ExitToAppIcon />
           </IconButton>
-          <span>Logout</span>
+          <span>Sair</span>
         </div>
       </div>
     </header>
