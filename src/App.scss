@@ -1,0 +1,26 @@
+@import './global/utilitites/utils';
+@import './global/utilitites/vars';
+
+* {
+  box-sizing: border-box;
+  font-family: $font-0;
+}
+
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  transition: transform .3s;
+  padding-top: 50px;
+}
+
+.App {
+  >div {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+}
