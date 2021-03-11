@@ -1,0 +1,10 @@
+@import './vars';
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+  @media #{$max-sm} {
+    max-width: 100%;
+  }
+}

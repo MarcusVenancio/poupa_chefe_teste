@@ -1,0 +1,54 @@
+@import "../../global/utilitites/vars";
+
+.default-table {
+  width: 100%;
+  thead {
+    tr {
+      th {
+        padding: 15px 10px;
+        font-family: $font-0;
+      }
+    }
+  }
+  tbody {
+    tr {
+      td {
+        padding: 15px 10px;
+        text-align: center;
+        vertical-align: middle;
+        font-family: $font-0;
+        border: none;
+        border-color: transparent;
+      }
+      &:nth-child(2n-1) {
+        background-color: $gray-2;
+      }
+    }
+  }
+  &.darkmode {
+    thead {
+      tr {
+        th {
+          color: $color-0;
+        }
+      }
+    }
+    tbody {
+      tr {
+        &:nth-child(2n-1) {
+          background-color: $color-1;
+          td {
+            color: $white;
+          }
+        }
+        td {
+          &.edit {
+            svg {
+              color: $color-0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

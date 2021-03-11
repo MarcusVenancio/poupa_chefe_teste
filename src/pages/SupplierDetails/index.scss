@@ -1,0 +1,39 @@
+@import '../../global/utilitites/vars';
+
+.supplier-details {
+  min-height: calc(100vh - 48px);
+  &__form {
+    hr {
+      margin: 40px 0 25px;
+    }
+    button {
+      margin: 30px 0;
+    }
+  }
+  &__subtitle {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: $font-0;
+    font-size: 32px;
+  }
+  &.darkmode {
+    background-color: $gray-2;
+    .supplier-details__form {
+      hr {
+        border-color: $color-0;
+      }
+      input {
+        color: $color-0;
+      }
+      button {
+        background-color: $color-0;
+        &:hover {
+          background-color: darken($color-0, 5%);
+        }
+      }
+    }
+    .supplier-details__subtitle {
+      color: $color-0;
+    }
+  }
+}

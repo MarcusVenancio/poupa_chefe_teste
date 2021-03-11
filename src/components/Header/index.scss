@@ -1,0 +1,42 @@
+@import '../../global/utilitites/vars';
+
+.header {
+  box-shadow: 0 5px 5px 0 rgba($black, .1);
+  >.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__switch-theme {
+    >span {
+      font-family: $font-0;
+      font-size: 12px;
+      font-weight: bold;
+      color: $gray-1;
+    }
+  }
+  &__logout {
+    >span {
+      font-family: $font-0;
+      font-size: 12px;
+      font-weight: bold;
+      color: $gray-1;
+    }
+  }
+  &.darkmode {
+    background-color: $color-1;
+    .header__switch-theme {
+      span {
+        color: $color-0;
+      }
+      .MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track {
+        background-color: $color-0 !important;
+      }
+    }
+    .header__logout {
+      svg, >span {
+        color: $color-0;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+/*** MEDIAS ***/
+$screen-xs: 480px !default;
+$screen-xs-max: 576px !default;
+$screen-sm-max: 991px !default;
+$screen-md-max: 1230px !default;
+$screen-max: 1980px !default;
+
+$xs: "screen and (max-width: #{$screen-xs})";
+$max-xs: "screen and (max-width: #{$screen-xs-max})";
+$max-sm: "screen and (max-width: #{$screen-sm-max})";
+$max-md: "screen and (max-width: #{$screen-md-max})";
+
+$min-xs: "screen and (min-width: #{$screen-xs-max + 1})";
+$min-sm: "screen and (min-width: #{$screen-xs-max + 1})";
+$min-md: "print, screen and (min-width: #{$screen-sm-max + 1})"; // Rules for desktop and print
+
+/*** LAYOUT WIDTH ***/
+$mobile-width: 375px !default;
+$tablet-width: 750px !default;
+$desktop-width: 1230px !default;
+$max-container: 1230px !default;
+
+/*** COLORs ***/
+$white: #FFFFFF;
+$black: #000000;
+
+$gray-0: #CCCCCC;
+$gray-1: #999999;
+$gray-2: #eeeeee;
+
+$color-0: #7d57e2;
+$color-1: #2e2c35;
+// $color-1: #223565;
+
+$color-success: #63db7d;
+$color-info: $color-0;
+$color-danger: #c52e2e;
+$color-error: #ff0000;
+
+/*** FONTs ***/
+$font-0: "Montserrat", sans-serif;
+
+$font-size: 16px;
+
+/*** EASES ***/
+$ease-0: all 0.3s ease-in-out;
+$ease-1: all 0.5s ease-in-out;
+
+/*** CONFIGs ***/
+$img-path: "/assets/images/";
+$font-path: "../fonts/";
+
+$version: "#{random(9999)}" !default;
+$sprite-padding: 2px;
+$padding: 15px;
